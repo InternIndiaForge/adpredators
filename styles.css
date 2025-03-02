@@ -1,0 +1,444 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    height: 150px;
+    width: 200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    background-color: #4c7159;
+    height: 50px;
+    width: 90px;
+}
+
+/* Smart Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img:first-child {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background: url('https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #717b09;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1da851;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product {
+    background: rgb(213, 161, 212);
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 2rem;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp:hover {
+    background: #1da851;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: #2a1725;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.contact-link,
+.whatsapp-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-link:hover,
+.whatsapp-link:hover {
+    background: #b5a5ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    height: 1rem;
+    background: #0e0359;
+    color: rgb(168, 2, 2);
+}
+
+/* Marketing Strategies Section */
+.marketing-strategies {
+    padding: 50px;
+    text-align: center;
+}
+
+.marketing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.marketing-category {
+    background: rgb(85, 222, 36);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 30%;
+    min-width: 250px;
+}
+
+.marketing-category:hover {
+    transform: scale(1.05);
+    background: #c50766;
+}
+
+.learn-more {
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background: #ffe88a;
+}
+
+.marketing-subtypes {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Target Audience Section */
+.target-audience {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+}
+
+.audience-slider {
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.audience-card {
+    background: rgb(255, 163, 26);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.audience-card:hover {
+    transform: scale(1.05);
+    background: #1da851;
+}
+
+.audience-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.audience-desc {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Order Process & Working Strategies */
+.order-process,
+.working-strategies {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.order-process-slider,
+.working-strategies-slider {
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.process-card,
+.strategy-card {
+    background: rgb(225, 250, 0);
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.process-card:hover,
+.strategy-card:hover {
+    transform: scale(1.05);
+}
+
+/* Revenue Model Section */
+.revenue-model-slider {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    background: url("https://th.bing.com/th/id/OIP.iF02ZG4vyutW18WY8nBG6wHaEK?rs=1&pid=ImgDetMain");
+    background-size: cover;
+}
+
+.revenue-card {
+    padding: 20px;
+    margin: 20px;
+    justify-items: center;
+    height: 150px;
+    width: 20%;
+    min-width: 200px;
+    background-color: #25D366;
+    border: 2px solid red;
+    border-radius: 20px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.revenue-card:hover {
+    background-color: #0d1699;
+    border: 2px solid rgb(93, 142, 47);
+}
+
+/* About Company Section */
+.about-company {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: #ffe066;
+    transition: color 0.3s;
+}
+
+.about-text h3:hover {
+    color: #ffcc29;
+}
+
+.about-img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .marketing-category {
+        width: 100%;
+    }
+
+    .audience-slider,
+    .order-process-slider,
+    .working-strategies-slider,
+    .revenue-model-slider {
+        justify-content: flex-start;
+    }
+
+    .revenue-card {
+        width: 45%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 300px;
+    }
+
+    .product {
+        margin: 1rem;
+    }
+
+    .revenue-card {
+        width: 100%;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+}
